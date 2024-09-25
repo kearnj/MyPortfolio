@@ -1,0 +1,136 @@
+/* Set the html height and width to 100% */
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Styling the nav bar container */
+  nav {
+    background-color: #333; /* Optional: Background color for the navbar */
+  }
+  
+  /* Remove bullets from the list and style the nav */
+  nav ul {
+      list-style-type: none; /* Removes bullet points */
+      margin: 0;
+      padding: 0;
+      display: flex; /* Display items in a row */
+      justify-content: flex-end; /* Align items to the right */
+      text-align: right; /* Align text to the right */
+      position: relative; /* Ensures that the dropdown can be positioned correctly */
+  }
+  
+  /* Style for each list item */
+  nav li {
+      position: relative; /* Position for dropdown alignment */
+  }
+  
+  /* Navigation link styles */
+  ul li a {
+      display: block; /* Make the link fill the li */
+      color: white; /* Text color */
+      text-align: right; /* Align text to the right */
+      padding: 14px 16px; /* Padding for links */
+      text-decoration: none; /* Remove underline */
+      font-size: 15px; /* Font size for smaller text */
+  }
+  
+  /* Hover effect for links */
+  ul li a:hover {
+      background-color: #32252a; /* Background color on hover */
+  }
+  
+  /* Hero section styles */
+  .hero {
+      background-image: url("https://blogassets.leverageedu.com/blog/wp-content/uploads/2020/06/20182130/Types-of-Engineering-Degrees.jpg");
+      background-size: cover; /* Cover the whole area */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* No repeat */
+      height: 25vh; /* Set height to 25% of the viewport height */
+      display: flex; /* Flex layout for centering */
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      text-align: center; /* Center text */
+  }
+  
+  /* Hero text styling */
+  .hero h1 {
+      color: white; /* Hero text color */
+      font-size: 4rem; /* Font size for the hero text */
+      font-family: 'Arial', sans-serif; /* Font family */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for visibility */
+  }
+  
+  /* About section styles */
+  .about-section {
+    padding: 50px; /* Padding around the about section */
+    background-color: #f4f4f4; /* Background color for the about section */
+  }
+  
+  /* Flex container for profile image and bio */
+  .about-container {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap: 30px; /* Gap between items */
+  }
+  
+  /* Profile image styling */
+  .profile-image img {
+    border-radius: 50%; /* Make the image circular */
+    width: 150px; /* Image width */
+    height: 150px; /* Image height */
+    object-fit: cover; /* Ensures the image fills the box without stretching */
+  }
+  
+  /* Bio container styling */
+  .bio {
+    max-width: 600px; /* Maximum width for the bio */
+  }
+  
+  /* Bio heading styles */
+  .bio h2 {
+    margin-bottom: 10px; /* Margin below the heading */
+    font-size: 28px; /* Font size for the heading */
+    font-family: 'American Typewriter'; /* Font family */
+  }
+  
+  /* Bio paragraph styles */
+  .bio p {
+    font-size: 18px; /* Font size for paragraphs */
+    line-height: 1.6; /* Line height for readability */
+  }
+  
+  /* Dropdown menu styling */
+  .dropdown {
+      display: none; /* Hide the dropdown by default */
+      position: absolute; /* Position it absolutely relative to the nav item */
+      top: 100%; /* Position it directly below the nav item */
+      left: 0; /* Align to the left */
+      background-color: #6f2f49; /* Background color for dropdown */
+      border: 1px solid #ccc; /* Optional border */
+      z-index: 1000; /* Ensure it appears above other content */
+  }
+  
+  /* Show dropdown when the class is added */
+  .show-dropdown {
+      display: block; /* Show the dropdown */
+  }
+  
+  /* Additional styling for dropdown items */
+  .dropdown li {
+      list-style-type: none; /* Remove bullet points */
+  }
+  
+  .dropdown a {
+      display: block; /* Make dropdown links block level */
+      padding: 10px; /* Add some padding */
+      text-decoration: none; /* Remove underline */
+      color: white; /* Text color for dropdown links */
+  }
+  
+  /* Change color on hover for dropdown links */
+  .dropdown a:hover {
+      background-color: #f0f0f0; /* Light grey background on hover */
+  }
+  
